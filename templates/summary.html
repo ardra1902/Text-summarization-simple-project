@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Text Summarizer</h1>
+            <p class="lead">Retrieve the Summary for the Text</p>
+        </div>
+    </div>
+    <div class="container srt">
+        <div class="originaltext_container">
+            <div class="originaltext">
+                <h2>Original Text</h2>
+                <p>{{original_text}}</p>
+            </div>
+            <button class="btn btn-danger" type="submit">Words: {{length_of_originaltext}}</button>
+        </div>
+        <div class="summarytext_container">
+            <div class="summarytext">
+                <h2>Summary</h2>
+                <p>{{summary}}</p>
+            </div>
+            <button class="btn btn-success" type="submit">Words: {{length_of_summary}}</button>
+        </div>
+    </div>
+</div> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
